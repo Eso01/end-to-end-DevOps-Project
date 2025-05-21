@@ -1,6 +1,6 @@
 image:
   repository: eso001/complete-devops-project
-  tag: dbdc524
+  tag: 14e06a3
   pullPolicy: IfNotPresent
 service:
   enabled: true
