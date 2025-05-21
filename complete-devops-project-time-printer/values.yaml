@@ -1,0 +1,14 @@
+image:
+  repository: eso001/complete-devops-project
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  enabled: true
+  type: ClusterIP
+  port: 8080
+ingress:
+  enabled: false
+serviceAccount:
+  enabled: false
+autoscaling:
+  enabled: false

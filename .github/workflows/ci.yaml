@@ -25,4 +25,18 @@ jobs:
       - name: Push to Dockerhub
         run: |
           docker push eso001/complete-devops-project:${{env.SHORT_SHA}}
+          
+      - name: Congigure Git Author
+        run: |
+          git config --global user.name "eso01"
+          git config --global user.email "samuelonwuachi88@gmail.com
+
+      - name: Update Helm Chart with New Image Tag
+        run: |
+          sed -i "s/tag:.*/tag: ${{env.SHORT_SHA}}/" ./complete-devops-project-time-printer/values.yaml
+          git add complete-devops-project-time-printer/values.yaml
+          git commit -m "Update image tag to ${{env.SHORT_SHA}}"
+          git push origin main
+
+  
 
