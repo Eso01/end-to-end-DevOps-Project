@@ -1,6 +1,6 @@
 image:
   repository: eso001/complete-devops-project
-  tag: 5838eea
+  tag: 851fa4e
   pullPolicy: IfNotPresent
 service:
   enabled: true
