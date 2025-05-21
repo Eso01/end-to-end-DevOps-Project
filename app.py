@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_current_time():
     # Get the current time
     current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    return f"Current time of the day: {current_time}"
+    return f"The Current time of the day: {current_time}"
 
 if __name__ == '__main__':
     # Run the Flask app
