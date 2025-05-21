@@ -12,3 +12,6 @@ serviceAccount:
   enabled: false
 autoscaling:
   enabled: false
+podLabels:
+  apptime: now
+  env: prod
